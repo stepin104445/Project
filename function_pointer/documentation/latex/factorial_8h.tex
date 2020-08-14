@@ -1,0 +1,64 @@
+\hypertarget{factorial_8h}{}\doxysection{factorial.\+h File Reference}
+\label{factorial_8h}\index{factorial.h@{factorial.h}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{factorial_8h_a6bb7cbc91f40ca934f73b2cb4e545956}{factorial}} (int number)
+\item 
+int \mbox{\hyperlink{factorial_8h_abf2d0a1382f08b3134679b82d5ba9e2a}{calci}} (int number, int number2, int choice)
+\item 
+\mbox{\Hypertarget{factorial_8h_a857dc3eb39c8fb110ae3ec9643d3a153}\label{factorial_8h_a857dc3eb39c8fb110ae3ec9643d3a153}} 
+int {\bfseries add} (int x, int y)
+\item 
+\mbox{\Hypertarget{factorial_8h_abfdcac6c383a4d3cc4d7e29b2a532da8}\label{factorial_8h_abfdcac6c383a4d3cc4d7e29b2a532da8}} 
+int {\bfseries subtract} (int x, int y)
+\item 
+\mbox{\Hypertarget{factorial_8h_a50de380d6a4786c51a18168d9d9c7fa1}\label{factorial_8h_a50de380d6a4786c51a18168d9d9c7fa1}} 
+int {\bfseries multiply} (int x, int y)
+\item 
+\mbox{\Hypertarget{factorial_8h_ad5e63d8dcb07bc3606e673d61a989578}\label{factorial_8h_ad5e63d8dcb07bc3606e673d61a989578}} 
+int {\bfseries divide} (int x, int y)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{factorial_8h_abf2d0a1382f08b3134679b82d5ba9e2a}\label{factorial_8h_abf2d0a1382f08b3134679b82d5ba9e2a}} 
+\index{factorial.h@{factorial.h}!calci@{calci}}
+\index{calci@{calci}!factorial.h@{factorial.h}}
+\doxysubsubsection{\texorpdfstring{calci()}{calci()}}
+{\footnotesize\ttfamily int calci (\begin{DoxyParamCaption}\item[{int}]{number,  }\item[{int}]{number2,  }\item[{int}]{choice }\end{DoxyParamCaption})}
+
+Calculates the factorial of integer number 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em 1st} & Number \\
+\hline
+\mbox{\texttt{ in}}  & {\em 2st} & Number \\
+\hline
+\mbox{\texttt{ in}}  & {\em choice} & of operator 0\+:add,1\+:sub,2\+:multiply,3\+:divide \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int out of number1(choice)number2 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Returns 0 for divide with 0 
+
+output is in int form 
+\end{DoxyNote}
+\mbox{\Hypertarget{factorial_8h_a6bb7cbc91f40ca934f73b2cb4e545956}\label{factorial_8h_a6bb7cbc91f40ca934f73b2cb4e545956}} 
+\index{factorial.h@{factorial.h}!factorial@{factorial}}
+\index{factorial@{factorial}!factorial.h@{factorial.h}}
+\doxysubsubsection{\texorpdfstring{factorial()}{factorial()}}
+{\footnotesize\ttfamily int factorial (\begin{DoxyParamCaption}\item[{int}]{number }\end{DoxyParamCaption})}
+
+Calculates the factorial of integer number 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em number} & for which factorial has to be found \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Factorial of the number 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Returns -\/1 for negative values 
+\end{DoxyNote}
