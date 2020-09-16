@@ -1,21 +1,18 @@
-  
-SRC = unity/unity.c\
-src/factorial.c\
-test/test_factorial.c\
-main.c
+name: C/C++ CI
 
-INC = -Iunity\
--Iinc\
--Itest
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
 
-PROJECT_NAME = FACTORIAL.out
+jobs:
+  build:
 
-$(PROJECT_NAME): $(SRC)
-	gcc $(SRC) $(INC) -o $(PROJECT_NAME)
+    runs-on: ubuntu-latest
 
-run:$(PROJECT_NAME)
-	./${PROJECT_NAME}
-doc:
-	make -C documentation
-
-clean:
+    steps:
+    - uses: actions/checkout@v2
+      
+    - name: make all
+      run:  make all -C MiniProject_C/3_Implementation/
